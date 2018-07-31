@@ -1,0 +1,1372 @@
+<!-- home/templates/index.html -->
+{% extends 'base.html' %} <!-- Add this for inheritance -->
+{% load static %}
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <title>
+       {% block title %}FeederFox{% endblock %}
+    </title>
+  <meta charset="utf-8">
+  <title>Feederfox Media</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+{% block pagecontent %}
+ <!--header starts here -->
+<div class="bg-header">
+  <div class="container">
+   <div class="row">
+       <div class="col-md-6">
+        <div id="weather-frame" class="container">
+          <div id="upper-detail">
+            <div id="city-name"></div>
+          </div>
+          <div id="lower-detail">
+            <div class="row">
+              <div id="temp" class="col-xs-6">
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="{% static 'dist/images/logos/logo.png' %}" class="img-responsive header_img">
+      </div>
+      <div class="col-md-2" >
+        <div class="dropdown drop1">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Publisher
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu d1">
+              <li><a target="_blank" href="{% url 'about' %}">Sign Up</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+         <div class="dropdown drop1">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Customer
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu d1">
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+         <div class="dropdown drop1">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Advertiser
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu d1">
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+ <!-- header ends here -->
+
+<!-- bse scrolling bar starts here -->
+<div class="runtext-container">
+<div class="main-runtext">
+<marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
+
+<div class="holder">
+
+     <div class="text-container">
+    BSE Updates Coming Soon!!
+    </div>
+     <div class="text-container">
+   BSE Updates Coming Soon!!
+    </div>
+         <div class="text-container">
+   BSE Updates Coming Soon!!
+    </div>
+         <div class="text-container">
+   BSE Updates Coming Soon!!
+    </div>
+         <div class="text-container">
+             BSE Updates Coming Soon!!
+    </div>
+         <div class="text-container">
+   BSE Updates Coming Soon!!
+    </div>
+         <div class="text-container">
+   BSE Updates Coming Soon!!
+    </div>
+         <div class="text-container">
+   BSE Updates Coming Soon!!
+    </div>     <div class="text-container">
+   BSE Updates Coming Soon!!
+    </div>     <div class="text-container">
+   BSE Updates Coming Soon!!
+    </div>     <div class="text-container">
+   BSE Updates Coming Soon!!
+    </div>
+         <div class="text-container">
+   BSE Updates Coming Soon!!
+    </div>
+
+</div>
+
+</marquee>
+</div>
+</div>
+ <!-- bse scrolling bar ends here -->
+
+ <!-- navigation bar -->
+ <nav class="navbar navbar-default w3_megamenu" role="navigation">
+  <div class="navbar-header">
+    <button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><i class="fa fa-home"></i></a>
+  </div><!-- end navbar-header -->
+
+  <div id="defaultmenu" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+     <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Home <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu">
+
+          <li><a href="">NewsChannels</a></li>
+          <li><a href="">Newspapers</a></li>
+          <li><a href="">Magazines</a></li>
+          <li><a href="">Social Channels</a></li>
+        </ul>
+      </li>
+      <!-- Mega Menu -->
+        <li class="dropdown w3_megamenu-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Political Forum<b class="caret"></b></a>
+          <ul class="dropdown-menu fullwidth">
+            <li class="w3_megamenu-content withdesc">
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li><a data-description="" href="">
+                      <div class="card elevation-2dp box">
+                          <div class="row">
+                          <div class="col-md-5"></div>
+                          <div class="col-md-3">
+                          <img src="{% static 'dist/images/modi.jpg' %}" alt="" style="margin-left:-8px;height:130px;">
+                        </div>
+                        </div>
+
+
+                        <div class="supporting-text">
+                          <p> Narendra Damodardas Modi (Gujarati: [ˈnəɾeːnd̪rə d̪aːmoːd̪əɾˈd̪aːs ˈmoːd̪iː] (About this sound listen); born 17 September 1950) is an Indian politician serving as the 14th and current Prime Minister of India since 2014. He was the Chief Minister of Gujarat from 2001 to 2014, and is the Member of Parliament for Varanasi. Modi, a member of the Bharatiya Janata Party (BJP), is a Hindu nationalist and member of the right-wing Rashtriya Swayamsevak Sangh (RSS).</p>
+                        </div>
+                      </div>
+                    </a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                   <li><a data-description="" href="">
+                       <div class="card elevation-2dp box">
+                        <div class="row">
+                          <div class="col-md-5"></div>
+                          <div class="col-md-3">
+                          <img src="{% static 'dist/images/rahul_gandhi.jpg' %}" alt="" style="margin-left:-8px;height:130px;">
+                        </div>
+                        </div>
+                        <div class="supporting-text">
+                          <p> Rahul Gandhi About this sound pronunciation (help·info) [ˈraːɦʊl ˈɡaːnd̪ʱiː] (born 19 June 1970) is an Indian politician. The son of Sonia and Rajiv Gandhi, he is the President of the Indian National Congress and serves such additional offices as the Chairperson of the Indian Youth Congress and the National Students Union of India.</p>
+                        </div>
+                      </div>
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="w3_megamenu-content withdesc">
+              <div class="row">
+                <div class="col-sm-6" style="margin-top:-50px;">
+                  <ul>
+                    <li><a data-description="" href="">
+                      <div class="card elevation-2dp box">
+                        <div class="row">
+                          <div class="col-md-5"></div>
+                          <div class="col-md-3">
+                          <img src="{% static 'dist/images/kumarswamy.jpg' %}" alt="" style="margin-left:-8px;height:130px;">
+                        </div>
+                        </div>
+                        <div class="supporting-text">
+                          <p> Haradanahalli Devegowda Kumaraswamy (born 16 December 1959)[4] is an Indian politician and current Chief Minister of Karnataka. He is the President of Karnataka State Janata Dal (Secular) and son of former Prime Minister of India H. D. Deve Gowda.[5] During his 2006 cheif ministerial period Karnataka state recorded all time high GDP growth and he was called people's CM</p>
+                        </div>
+                      </div>
+                    </a></li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-6" style="margin-top:-50px;">
+                  <ul>
+                   <li><a data-description="" href="">
+                       <div class="card elevation-2dp box">
+                        <div class="row">
+                          <div class="col-md-5"></div>
+                          <div class="col-md-3">
+                          <img src="{% static 'dist/images/Nitish_Kumar2.jpg' %}" alt="" style="margin-left:-8px;height:130px;">
+                        </div>
+                        </div>
+                        <div class="supporting-text">
+                          <p> The Chief Minister of Bihar is the chief executive of the Indian state of Bihar. As per the Constitution of India, the Governor of Bihar is the state's de jure head, but de facto executive authority rests with the chief minister. </p>
+                        </div>
+                      </div>
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">NewsFeeds <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu">
+
+          <li><a href="">Headlines/Breaking News</a></li>
+          <li><a href="">Educational</a></li>
+          <li><a href="">Entertainment</a></li>
+          <li><a href="">Business</a></li>
+          <li><a href="">Sports</a></li>
+          <li><a href="">Lifestyle</a></li>
+          <li><a href="">Social</a></li>
+          <li><a href="">World/International</a></li>
+          <li><a href="">Global</a></li>
+        </ul>
+      </li>
+        <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Article/Blog <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu">
+
+          <li><a href="">Business/Economic</a></li>
+          <li><a href="">Write Article</a></li>
+          <li><a href="">E-books</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Business <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu">
+
+          <li><a href="">Consulting</a></li>
+        </ul><!-- end dropdown-menu -->
+      </li><!-- end standard drop down -->
+      <!-- end dropdown w3_megamenu-fw -->
+    </ul><!-- end nav navbar-nav -->
+  </div><!-- end #navbar-collapse-1 -->
+
+</nav><!-- end navbar navbar-default w3_megamenu -->
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+      <img src="{% static 'dist/images/ads/fgh.jpg' %}" style="width:100%;">
+    </div>
+</div>
+</div>
+
+<!-- Video Player -->
+
+<!--Ends Video Player -->
+
+
+<!-- Newschannels starts here -->
+<div class="container">
+<h2 class="heading-chnls"><strong>NewsChannels</strong></h2>
+<div class="news_chnl_bg wow animated fadeInLeft">
+  <h3 style="color:#fff;text-align: center;"> National Channels</h3><br>
+<div class="owl-carousel owl-theme">
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/1.jpg' %}" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+        <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/21.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+        <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/NDTV.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/Aaj_Tak_logo.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+        <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/cnw.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+      <img class="img-responsive" src="{% static 'dist/images/national/tv9.jpg' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/JIA-News.jpg' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+       <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/Star_News.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/zee_media.jpg' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/india_today.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{% static 'dist/images/national/NDTV.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+    <div class="item">
+        <a href="#">
+      <div class="box-model">
+       <img class="img-responsive" src="{%  static 'dist/images/national/NDTV.png' %}" alt="" style="height:150px;">
+    </div>
+  </a>
+    </div>
+</div>
+
+<br>
+<br>
+
+<h3 style="color:#fff;margin-top:-20px;text-align: center;"> Regional / Local Channels</h3><br><br>
+<div class="owl-carousel owl-theme">
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/Vidhan-Sauda-Bangalore.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">ಕರ್ನಾಟಕ</h3>
+        <p>ಕನ್ನಡ ಸುದ್ದಿ ಚಾನಲ್ಗಳಿಗಾಗಿ ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Karnataka</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/jharkhand.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">झारखंड</h3>
+        <p>झारखंड समाचार के लिए यहां क्लिक करें</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Jharkhand</h4>
+  </a>
+  </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/telangana.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">తెలంగాణ</h3>
+        <p>తెలుగు వార్తలు కోసం ఇక్కడ క్లిక్ చేయండి</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Telangana</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/rajasthan.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">राजस्थान</h3>
+        <p>राजस्थानी समाचार के लिए यहां क्लिक करें</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Rajasthan</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/jammu.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">جموں و کشمیر</h3>
+        <p>میر نیوز کے لئے یہاں کلک  ریں</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Jammu & Kashmir</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/kerala.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">കേരളം</h3>
+        <p>മലയാളി വാർത്തകൾക്കായി ഇവിടെ ക്ലിക്ക് ചെയ്യുക</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Kerala</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/up.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">उत्तर प्रदेश</h3>
+        <p>उत्तरा प्रदेश समाचार के लिए यहां क्लिक करें</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Uttar Pradesh</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{%  static 'dist/images/regional_logos/haryana.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Haryana</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/himachal.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Himachal Pradesh</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/tripura.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Tripura</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/up.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">Uttar Pradesh</h4>
+  </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="box-model">
+       <div class="content_chanel">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{% static 'dist/images/regional_logos/bengal.jpg' %}" style="height:150px;">
+      <div class="content-details fadeIn-top fadeIn-right">
+        <h3 style="text-align: center;">Karnataka</h3>
+        <p>This is a short description</p>
+      </div>
+    </a>
+  </div>
+</div>
+<h4 style="color:#fff;text-align: center;">West Bengal</h4>
+  </a>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Newschannels ends here -->
+<br>
+
+<!--Newspapers-->
+<div class="container">
+  <h2 class="heading-news"><strong>NewsPapers</strong></h2>
+<!--National Newspapers starts here-->
+  <div class="row">
+    <div class="col-md-10">
+      <div class="nws-bg wow animated fadeInLeft">
+   <h3 style="color:#fff;text-align: center;">National Newspapers</h3><br>
+<div class="wrapper">
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/1.png' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="{% static 'dist/newspapers/NABABARTA_26-07-2018.pdf' %}">Read</a>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/2.png' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="{% static 'dist/newspapers/MV E-Paper 01-07 July18 (1).pdf' %}">Read</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{%  static 'dist/images/national_newspapers/3.png' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="{% static 'dist/newspapers/19  7 2018 PDF FILE.pdf' %}">Read</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/4.png' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="{% static 'dist/newspapers/SANTHAL EPAPER FULL PAGE 27 JULY 18.pdf' %}">Read</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/5.png' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="{% static 'dist/newspapers/Aina page 1.pdf' %}">Read</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/6.png' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="{% static 'dist/newspapers/karmasakthi 27.07.2018.pdf' %}">Read</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/7.png' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="{%  static 'dist/newspapers/ispat page-1 new.pdf' %}">Read</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/national_newspapers/_aeff3d8a-88c3-11e6-92b8-e7f1e026a3c4.png' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="#">Read</a>
+        </div>
+      </div>
+    </div><div class="item">
+      <div class="hovereffect"><img src="{% static 'dist/images/newspaper.jpg' %}" class="img-responsive reg-img">
+         <div class="overlay">
+               <a class="info" href="#">Read</a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<!--National Newspapers sliders Ends here-->
+
+<!--Regional Newspapers sliders starts here-->
+  <h3 style="color:#fff;text-align: center;"> Regional / Local Newspapers</h3><br>
+<div class="c-carousel">
+  <div class="c-carousel__arrow c-carousel__arrow--left"></div>
+  <div class="c-carousel__arrow c-carousel__arrow--right"></div>
+  <ul class="c-carousel__slides">
+    <li>
+      <img src="{% static 'dist/images/newspaper_logos/karnataka.jpg' %}" class="reg_news_img">
+    </li>
+    <li><img src="{% static 'dist/images/newspaper_logos/TELANGANA.jpg' %}" class="reg_news_img"></li>
+    <li><img src="{% static 'dist/images/newspaper_logos/mp.jpg' %}" class="reg_news_img"></li>
+    <li><img src="{% static 'dist/images/newspaper_logos/JHARKHAND.jpg' %}" class="reg_news_img"></li>
+    <li><img src="{% static 'dist/images/newspaper_logos/up.jpg' %}" class="reg_news_img"></li>
+    <li><img src="{% static 'dist/images/newspaper_logos/TELANGANA.jpg' %}" class="reg_news_img"></li>
+    <li><img src="{% static 'dist/images/newspaper_logos/PUNJAB.jpg' %}" class="reg_news_img"></li>
+    <li><img src="{% static 'dist/images/newspaper_logos/bengal.jpg' %}" class="reg_news_img"></li>
+  </ul>
+</div>
+<!--Regional Newspapers sliders ends here-->
+
+</div>
+    </div>
+    <div class="col-md-2">
+      <img src="{% static 'dist/images/ads/ad2.jpg' %}" style="width:100%;">
+      <img src="{%  static 'dist/images/ads/d.jpg' %}" style="width:100%;margin-top:3px;">
+      <img src="{%  static 'dist/images/ads/NEWS.jpg' %}" style="width:100%;height:87px;margin-top:3px;">
+    </div>
+  </div>
+
+</div>
+<!--Newspapers Ends here-->
+<br>
+
+<!--Magazines-->
+ <div class="container">
+   <h2 class="heading-magzn"><strong>Magazines</strong></h2>
+  <div class="bg-overlay wow animated fadeInLeft">
+        <div class="row">
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="hdpe">Entertainment</button>
+            <button class="btn btn-default filter-button" data-filter="sprinkle">Sports</button>
+            <button class="btn btn-default filter-button" data-filter="spray">Health</button>
+            <button class="btn btn-default filter-button" data-filter="irrigation">Business</button>
+        </div>
+        <br/>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-2 col-xs-6 filter hdpe">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m1.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-2 col-xs-6 filter sprinkle">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m2.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter hdpe">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m3.png' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter irrigation">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m4.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter spray">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m5.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter irrigation">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m6.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter spray">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m7.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter irrigation">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m8.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter irrigation">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m2.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter hdpe">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m1.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter spray">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m8.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter sprinkle">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{% static 'dist/images/m3.png' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter sprinkle">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m4.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter sprinkle">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m6.jpg ' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+            <div class="gallery_product col-lg-2 col-md-2 col-sm-3 col-xs-6 filter sprinkle">
+               <div class="hovereffect">
+              <img class="img-responsive" src="{%  static 'dist/images/m1.jpg' %}" alt="">
+              <div class="overlay">
+               <a class="info" href="#">View Details</a>
+             </div>
+           </div>
+            </div>
+        </div>
+    </div>
+  </div>
+<!--End of Magazines-->
+
+<br>
+
+<!--Start of Social Channels-->
+<div class="container">
+<h2 class="social_channels"><strong>Social Channels</strong></h2>
+<div class="row wow animated fadeInDown">
+  <div class="col-md-10">
+     <div class="accordion">
+  <ul>
+    <li tabindex="1">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+    <li tabindex="2">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+    <li tabindex="3">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+    <li tabindex="4">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+    <li tabindex="5">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+    <li tabindex="6">
+      <div>
+        <a href="#">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
+  </div>
+
+  <div class="col-md-2">
+    <div class="card_ad card-5">
+    <img src="{% static 'dist/images/ads/HG.jpg' %}" alt="Alt" style="width:100%;height:247px;">
+  </div>
+  </div>
+  </div>
+
+</div>
+<!--End of Social Channels-->
+<br><br>
+
+<!--Ebooks-->
+<div class="container">
+  <h2 class="section_heading"><strong>E-books</strong></h2>
+<div class="row">
+  <div class="col-md-10">
+    <div class="ebooks_bg wow animated fadeInDown">
+<section>
+  <div class="stage">
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-30.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-29.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-28.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-29.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-27.jpeg" alt="Alt" /></div>
+    <div class="cbImage active"><img src="https://grillenburgerbar.dk/music/img/grillen-30.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-29.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-28.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-27.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-30.jpeg" alt="Alt" /></div>
+    <div class="cbImage"><img src="https://grillenburgerbar.dk/music/img/grillen-28.jpeg" alt="Alt" /></div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+    <div class="controls">
+    <div class="cbcontrol" id="cbControlRight"><</div>
+    <div class="cbcontrol" id="cbControlLeft">></div>
+    <div class="clear"></div>
+  </div>
+</section>
+</div>
+  </div>
+  <div class="col-md-2">
+    <img src="{% static 'dist/images/ads/VB.jpg' %}" style="width:100%;">
+    <img src="{% static 'dist/images/ads/NP.jpg' %}" style="width:100%;margin-top:10px;height:137px;">
+  </div>
+</div>
+
+</div>
+<br>
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+      <img src="{% static 'dist/images/ads/ad-4.jpg' %}" style="width:100%;" class="wow animated fadeInRight">
+    </div>
+</div>
+</div>
+<!--Ebooks ends here-->
+
+<br>
+
+<!--Articles-->
+<div class="container">
+<h2 class="article_heading"><strong>Articles / Blogs</strong></h2>
+<div class="articles_bg box-artcl effect5">
+<div id="content">
+  <div class="container1">
+    <div class="flipper">
+      <div class="front">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/cherry-blossoms-unsplash.jpg" alt="cherry blossoms" class="artcle_img">
+        <p class="caption">Cherry blossom</p>
+      </div>
+      <div class="back">
+        <a href="https://en.wikipedia.org/wiki/Cherry_blossom" target="_blank">
+          <h1 class="article-header">Cherry blossom</h1>
+        </a>
+        <p class="date">23/07/1997</p>
+        <p class="description">A cherry blossom is the flower of any of several trees of genus Prunus, particularly the Japanese cherry, Prunus serrulata, which is called sakura after the Japanese (桜 or 櫻; さくら).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container1">
+    <div class="flipper">
+      <div class="front">
+        <img src="https://images.pexels.com/photos/69776/tulips-bed-colorful-color-69776.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="white daisy" class="artcle_img">
+        <p class="caption">Tulip</p>
+      </div>
+      <div class="back">
+        <a href="https://en.wikipedia.org/wiki/Tulip" target="_blank">
+          <h1 class="article-header">Tulip</h1>
+        </a>
+        <p class="date">14/07/2001</p>
+        <p class="description">Tulips (Tulipa) form a genus of spring-blooming perennial herbaceous bulbiferous geophytes. The flowers are usually large, showy and brightly coloured, generally red, yellow, or white.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container1">
+    <div class="flipper">
+      <div class="front">
+        <img src="https://images.pexels.com/photos/796658/pexels-photo-796658.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Red Purple and Yellow Tulip" class="artcle_img">
+        <p class="caption">Lavender</p>
+      </div>
+      <div class="back">
+        <a href="https://en.wikipedia.org/wiki/Lavandula" target="_blank">
+          <h1 class="article-header">Lavender</h1>
+        </a>
+        <p class="date">06/08/2004</p>
+        <p class="description">Lavandula is a genus of 47 known species of flowering plants in the mint family. The most widely cultivated species is often referred to as lavender, and there is a color named for the shade of its the flowers. </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--End of Articles-->
+
+<br><br>
+
+ <div class="bg-footer">
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="margin-top:-47px;">
+                    <div class="ft-logo"><img src="{% static 'dist/images/only_logo.png' %}" alt="" style="width:136px;height:87px;"></div>
+                </div>
+            </div>
+            <hr class="footer-line">
+            <div class="row" style="margin-top:-20px;">
+                <!-- footer-about -->
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+                    <div class="footer-widget">
+                        <div class="footer-title">Company</div>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="footer_links">About</a></li>
+                            <li><a href="#" class="footer_links">Support</a></li>
+                            <li><a href="#" class="footer_links">Press</a></li>
+                            <li><a href="#" class="footer_links">Legal & Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.footer-about -->
+                <!-- footer-links -->
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+                    <div class="footer-widget ">
+                        <div class="footer-title">Quick Links</div>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="footer_links">News</a></li>
+                            <li><a href="#" class="footer_links">Contact us</a></li>
+                            <li><a href="#" class="footer_links">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.footer-links -->
+                <!-- footer-links -->
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+                    <div class="footer-widget ">
+                        <div class="footer-title">Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="footer_links">Twitter</a></li>
+                            <li><a href="#" class="footer_links">Google +</a></li>
+                            <li><a href="#" class="footer_links">Linked In</a></li>
+                            <li><a href="#" class="footer_links">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.footer-links -->
+                <!-- footer-links -->
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-6 col-6 ">
+                    <div class="footer-widget ">
+                        <h3 class="footer-title">Subscribe Newsletter</h3>
+                        <form>
+                            <div class="newsletter-form">
+                                <input class="form-control" placeholder="Enter Your Email address" type="text">
+                                <button class="btn btn-sm btn-footer" type="submit">Go</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.footer-links -->
+                <!-- tiny-footer -->
+            </div>
+            <div class="row ">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center ">
+                    <div class="tiny-footer">
+                        <p class="footer_para">Copyright © All Rights Reserved 2020 | Template Design & Development by <a href="https://easetemplate.com/downloads/bitcoin-cryptocurrency-website-template-amazing-design " target="_blank" class="copyrightlink">Feederfox</a></p>
+                    </div>
+                </div>
+                <!-- /. tiny-footer -->
+            </div>
+        </div>
+    </div>
+    <!-- /.footer -->
+  </div>
+
+
+<!-- ebooks js -->
+<script type="text/javascript">
+  (function ($) {
+    "use strict";
+
+    window.coverBrowser = window.coverBrowser || {};
+
+    var self = window.coverBrowser;
+
+    self.utils = (function () {
+
+        var getDir = function (of) {
+
+            var id = of,
+                start = id.indexOf("cbcontrol") + 10,
+                dir = id.substring(start, id.length);
+
+            return dir;
+
+        };
+
+        return {
+            getDir: getDir
+        };
+
+    })();
+
+    self.state = (function () {
+
+        var classes = [],
+            activeIndex = 0,
+            stageDim = {},
+            coverDim = {};
+
+        return {
+            classes: classes,
+            activeIndex: activeIndex
+        };
+
+    })();
+
+    self.actions = (function () {
+
+        var doMove = function () {
+
+            var activeIndex = self.state.activeIndex,
+                $covers = $(".cbImage"),
+                newActive, oldActive = $(".cbImage .active");
+
+            $covers.each(function (i, e) {
+
+                if (i < activeIndex) {
+
+                    this.className = "cbImage inactiveLeft inactiveLeft" + (activeIndex - i);
+                    this.style.zIndex = ((activeIndex + i) * 1);
+
+                }
+                else if (i === activeIndex) {
+                    this.className = "cbImage active";
+                    newActive = this;
+                }
+                else if (i > activeIndex) {
+
+                    this.className = "cbImage inactiveRight inactiveRight" + ((activeIndex - i) * -1);
+                    this.style.zIndex = ((activeIndex - i) * 1);
+
+                }
+
+            });
+
+            $(document).trigger("endmove.cvr", [{ "newActive": newActive, "oldActive": oldActive }]);
+
+        },
+
+            moveRight = function () {
+
+                if ($(document).trigger("startmoveright") !== false) {
+
+                    self.state.activeIndex = self.state.activeIndex - 1;
+
+                    doMove();
+
+                }
+            },
+
+            moveLeft = function () {
+
+                if ($(document).trigger("startmoveleft") !== false) {
+
+                    self.state.activeIndex = self.state.activeIndex + 1;
+
+                    doMove();
+
+                }
+            };
+
+        return {
+            moveRight: moveRight,
+            moveLeft: moveLeft,
+            doMove: doMove
+        };
+
+    })();
+
+    self.imgs = (function () {
+
+        var attachEvents = function () {
+
+            $(".cbImage").on("click", function (event) {
+                //move[dir] the number of times difference
+                //between index of active and index of clicked
+                var dir = this.className.search(/left/gi) !== -1 ? "Right" : "Left",
+                    $coll = $(".cbImage"),
+                    diff = dir === "Right" ? ($coll.index($(".cbImage.active")) - $coll.index(this)) :
+                        ($coll.index($(".cbImage.active")) - $coll.index(this)) * -1,
+                    x;
+
+                for (x = 0; x < diff; x++) {
+                    self.actions["move" + dir]();
+                }
+            });
+
+        };
+
+        return {
+            attachEvents: attachEvents
+        };
+
+    })();
+
+
+    self.controls = (function () {
+
+        var attachEvents = function () {
+
+            $(".cbcontrol").on("click", function (event) {
+
+                var dir = self.utils.getDir(this.id),
+                    active = $(".cbImage.active"),
+                    makeActive = dir === "Right" ? active.prev(".cbImage") : active.next(".cbImage");
+
+                if (makeActive.length > 0) {
+                    self.actions["move" + dir]();
+                }
+            });
+
+            $(".stage").on("touchstart", function (event) {
+                console.log("touch start");
+            });
+
+        };
+
+        return {
+            attachEvents: attachEvents
+        };
+    })();
+
+    self.init = (function () {
+
+
+
+        var $covers = $(".cbImage"),
+            setStageDims = function () {
+                self.state.stageDim = { x: $(".stage").outerWidth(), y: $(".stage").outerHeight() };
+            },
+            setCoverDims = function ($active) {
+                self.state.coverDim = { x: $active.outerWidth(), y: $active.outerHeight() };
+            },
+            getSheet = function () {
+                var l = $("#cbGeneratedClasses").length;
+                if (l === 0) {
+                    var $newsheet = $("<style type='text/css' id='cbGeneratedClasses'></style>"),
+                        ss = $newsheet.appendTo("head")[0].sheet;
+                }
+                else {
+                    $("#cbGeneratedClasses").text('');
+                    var ss = $("#cbGeneratedClasses")[0].sheet;
+                }
+                return ss;
+            },
+            generateClasses = function () {
+
+                var leftfac,
+                    rightfac,
+                    x,
+                    z = 100,//TODO figure equation for zindex, increase closer to activeIndex, decrease after
+                    cvrLength = $covers.length,
+                    l = cvrLength * 2,
+                    ss = getSheet(),
+                    al;
+
+                al = (self.state.stageDim.x / 2) - (self.state.coverDim.x / 2);
+
+                ss.insertRule(".stage .active{left:" + al + "px;}", 0);
+
+                for (x = 0; x < l; x++) {
+
+                    //create an inactive class for each direction
+                    //for every element in the set
+                    leftfac = al - ((self.state.coverDim.x * x) / 2) - (self.state.coverDim.x / 2);
+                    rightfac = al + ((self.state.coverDim.x * x) / 2) + (self.state.coverDim.x / 2);
+                    ss.insertRule(".inactiveLeft" + x + "{left:" + leftfac + "px;z-index:" + z + ";}", 0);
+                    ss.insertRule(".inactiveRight" + x + "{left:" + rightfac + "px;z-index:" + z + ";}", 0);
+
+                }
+
+            },
+            doInit = function () {
+
+                var $active = $covers.filter(".active"),
+                    activeIndex = $covers.index($active) !== -1 ? $covers.index($active) : 0;
+
+                setStageDims();
+                setCoverDims($active);
+
+                generateClasses();
+
+                self.controls.attachEvents();
+
+                self.imgs.attachEvents();
+
+                self.state.activeIndex = activeIndex;
+
+                self.actions.doMove();
+
+            }(),
+            reInit = function () {
+
+                var $active = $covers.filter(".active");
+
+                setStageDims();
+                setCoverDims($active);
+
+                generateClasses();
+
+            };
+
+        $(window).on("resize", function (event) {
+            self.init.reInit();
+        });
+
+        return {
+            reInit: reInit
+        };
+
+    })();
+
+})(jQuery);
+</script>
+<!-- ebooks js ends here -->
+<script type="text/javascript">
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".dropdown").hover(
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');
+        }
+    );
+});
+</script>
+
+{% endblock %}
+</body>
+</html>
